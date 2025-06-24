@@ -183,7 +183,7 @@ for t = 1:T_sim
             
             gamma_new = gamma_scalar * ones(params.N, 1);
             
-           r
+           
             mpc.updateGamma(gamma_new);
             fprintf('Updated gamma: %.4f\n', gamma_scalar);
             
