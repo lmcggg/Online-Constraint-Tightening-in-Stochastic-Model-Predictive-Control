@@ -1,7 +1,7 @@
-# TransMPC: Stochastic Model Predictive Control with Online Constraint Tightening
+#  Stochastic Model Predictive Control with Online Constraint Tightening
 
 This repository contains MATLAB implementation of a novel approach to Stochastic Model Predictive Control (SMPC) with online constraint tightening based on machine learning techniques. The framework uses regression models to learn the relationship between constraint tightening parameters and constraint satisfaction probability.
-
+This repo is  inspired by "Online Constraint Tightening in Stochastic Model Predictive Control: A Regression Approach "-IEEE TRANSACTIONS ON AUTOMATIC CONTROL, VOL. 70, NO. 2, FEBRUARY 2025(Alexandre Capone , Student Member, IEEE, Tim Brüdigam , Member, IEEE,and Sandra Hirche , Fellow, IEEE),thanks for their paper.
 ## Key Features
 
 - **Stochastic MPC**: Implementation of a stochastic MPC controller with constraint tightening
@@ -78,19 +78,18 @@ The simulation results include:
 - Predicted constraint satisfaction probability
 - Performance metrics including control cost and constraint violations
 
-## Citation
+![image](https://github.com/user-attachments/assets/06c603d4-a434-4cb2-a0f7-1194e317bc5f)
+![image](https://github.com/user-attachments/assets/4c52628e-feaf-4d8a-8986-1671245a74a2)
 
-If you use this code in your research, please cite:
+![image](https://github.com/user-attachments/assets/e8cc5386-eea1-454e-b006-97f55ce070d8)
 
-```
-@article{transmpc2023,
-  title={Online Constraint Tightening in Stochastic Model Predictive Control: A Regression Approach},
-  author={Your Name},
-  journal={arXiv preprint},
-  year={2023}
-}
-```
+Stochastic MPC:
+  Constraint violations: 435 out of 5500 steps (7.91%)
+  Final gamma value: 0.1455
+  Final constraint satisfaction probability: 0.9519 (target: 0.9500)
 
+Traditional MPC:
+  Constraint violations: 2394 out of 5500 steps (43.53%)
 ## License
 
 This project is licensed under the MIT License - see the LICENSE file for details. 
